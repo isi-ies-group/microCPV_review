@@ -20,7 +20,7 @@ y_axis = st.sidebar.radio('Y axis', table.columns)
 
 fig = px.scatter(table, x=x_axis, y=y_axis,
 	         size='X (suns)', color='Group',
-                 hover_name='Reference', log_x=True, size_max=60)
+                 hover_name='Reference')
 
 st.plotly_chart(fig, use_container_width=True)
 
