@@ -24,7 +24,7 @@ $$\\ \eta_\textrm{electrical} = \frac{P_\textrm{MPP}}{Irradiance_\textrm{Lens ap
 $$\\ CAP = \sqrt{X} \sin(\alpha) \\$$
 $$CAP - \textrm{Concentration acceptance product} \\$$
 $$X - \textrm{Concentration in suns} \\$$
-$$\alpha - \textrm{Acceptance angle for 90\% of max. optical efficiency}$$
+$$\alpha - \textrm{Acceptance angle for 90\% of max. optical efficiency} \\$$
 $$P_\textrm{MPP} - \textrm{Electrical power at maximum power point}$$
 '''
 st.write(latext)
