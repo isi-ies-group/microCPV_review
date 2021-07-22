@@ -7,6 +7,9 @@ Created on Thu Jul 15 18:01:43 2021
 import pandas as pd
 import streamlit as st
 import plotly.express as px
+from state import count_sessions
+
+count_sessions()
 
 table = pd.read_excel('OverviewTable_v1.3.xlsx', na_values='-')
 
@@ -24,7 +27,7 @@ $$\\ \eta_\textrm{electrical} = \frac{P_\textrm{MPP}}{Irradiance_\textrm{Lens ap
 $$\\ CAP = \sqrt{X} \sin(\alpha) \\$$
 $$CAP - \textrm{Concentration acceptance product} \\$$
 $$X - \textrm{Concentration in suns} \\$$
-$$\alpha - \textrm{Acceptance angle for 90\% of max. optical efficiency} \\$$
+$$\alpha - \textrm{Acceptance angle for 90\% of max. optical efficiency}\\$$
 $$P_\textrm{MPP} - \textrm{Electrical power at maximum power point}$$
 '''
 st.write(latext)
